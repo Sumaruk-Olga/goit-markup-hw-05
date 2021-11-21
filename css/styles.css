@@ -11,6 +11,7 @@
   --border-portfolio-card: #eeeeee;
   --social-link-color: #afb1b8;
   --hover-card-color: rgba(33, 150, 243, 0.9);
+  --our-works-fone: rgba(47, 48, 58, 0.8);
 }
 
 body {
@@ -647,4 +648,28 @@ img {
 .card-link:hover .text-card {
   transform: translateY(0);
   opacity: 1;
+}
+.our-works-description {
+  position: relative;
+  display: block;
+}
+.our-works-description-text {
+  font-style: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+  text-transform: uppercase;
+}
+.our-works-description-text-container {
+  display: flex;
+  position: absolute;
+  background-color: var(--our-works-fone);
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  left: 0;
+  opacity: 1;
+  justify-content: center;
+  align-items: center;
 }
