@@ -10,6 +10,7 @@
   --header-border: #ececec;
   --border-portfolio-card: #eeeeee;
   --social-link-color: #afb1b8;
+  --hover-card-color: rgba(33, 150, 243, 0.9);
 }
 
 body {
@@ -612,3 +613,57 @@ img {
   left: 0;
   bottom: 0;
 }
+.thumb {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+.thumb::before {
+  display: inline-block;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+  background-color: var(--hover-card-color);
+
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-link:hover .thumb::before,
+.card-link:focus .thumb::before {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* .test-link {
+  position: relative;
+  margin: 50px;
+  padding: 20px;
+  background-color: yellow;
+  display: inline-block;
+  outline: 1px solid red;
+}
+
+.test-link::before {
+  display: inline-block;
+  content: '';
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--hover-card-color);
+
+  opacity: 0.3;
+}
+
+.test-link:hover.test-link::before {
+  opacity: 1;
+  background-color: violet;
+} */
