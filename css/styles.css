@@ -613,6 +613,7 @@ img {
   height: 4px;
   left: 0;
   bottom: 0;
+  border-radius: 2px;
 }
 
 .thumb {
