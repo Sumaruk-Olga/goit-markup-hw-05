@@ -350,6 +350,7 @@ img {
 }
 
 .title-description {
+  color: var(--text-color);
   line-height: 1.87;
   letter-spacing: 0.03em;
 }
@@ -540,6 +541,7 @@ img {
 .footer-container {
   display: flex;
   justify-content: flex-start;
+  align-items: baseline;
 }
 .footer .logo {
   display: block;
