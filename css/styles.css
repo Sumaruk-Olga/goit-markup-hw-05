@@ -177,6 +177,10 @@ img {
 }
 
 .header {
+  display: block;
+  position: fixed;
+  z-index: 9;
+  width: 100%;
   background-color: var(--white-color);
   font-size: 14px;
   line-height: 1.14;
